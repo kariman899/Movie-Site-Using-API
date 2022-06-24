@@ -1,0 +1,143 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="left-menu  p-3 d-flex  align-content-between flex-wrap">
+        <div class="nav-item ">
+            <ul class="ps-2">
+                <li class="item1">
+                    <a href="#" moviesTitle="now_playing">Now playing</a>
+                </li>
+                <li class="item2">
+                    <a href="#" moviesTitle="popular">Popular</a>
+                </li>
+                <li class="item3">
+                    <a href="#" moviesTitle="top_rated">Top Rated</a>
+                </li>
+                <li class="item4">
+                    <a href="#" id="trending">Trending</a>
+                </li>
+                <li class="item5">
+                    <a href="#" moviesTitle="upcoming">Upcoming</a>
+                </li>
+                <li class="item6">
+                    <a href="#contact" moviesTitle="upcoming" id="contactUrl">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div class="social mt-5">
+            <a href="#" class="me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="me-2"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="me-2"><i class="fas fa-globe"></i></a>
+            <small class="text-white mt-4 d-inline-block">Copyright Â© 2019 All Rights Reserved.</small>
+        </div>
+    </div>
+    <div class="right-menu bg-white  d-flex flex-column justify-content-between align-items-center  shadow p-2">
+
+        <div class="logo ">
+            <img src="images/logo.png">
+        </div>
+        <i id="toggle-btn" class="open "></i>
+
+        <div class=" d-flex flex-column icon  ">
+            <a href=""> <i class="fa-solid fa-basketball pb-3"></i></a>
+            <a href=""> <i class="fa-solid fa-share-nodes pb-3"></i></a>
+        </div>
+    </div>
+
+    <!--start movie-->
+    <section class="pt-5 ms-5 ms-md-0">
+        <div class="container">
+            <div class="row " >
+                <div class="col-md-6">
+                    <input id="searchWord" class="form-control mb-5  "
+                     placeholder="get movies by word...">
+                </div>
+                <div class="col-md-6">
+                    <input id="searchAll" class="form-control mb-5 " placeholder="search..." >
+                </div>
+            </div>
+            <div class="row" id="searchContainer">
+
+            </div>
+            <div class="row "  id="allMovie">
+            
+            </div>
+        </div>
+
+    </section>
+    <!--end movie-->
+
+    <!--start contact-->
+    <div class="contact py-5" id="contact">
+        <div class="container">
+            <h2 class="text-light my-5">ContacUs...</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group pb-3 name">
+                        <input class="form-control" id="name" placeholder="Enter Your Name">
+                        <p class="alert alert-danger d-none " id="namealert" role="alert">
+                            Your Name is not valid
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group pb-3 email">
+                        <input class="form-control" id="email" placeholder="Enter Email">
+                        <p class="alert alert-danger d-none" id="emailalert" role="alert">
+                            entre valid email
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group pb-3 phone">
+                        <input class="form-control" id="phone" placeholder="Enter phone">
+                        <p class="alert alert-danger d-none" id="phonealert" role="alert">
+                            entre valid phone
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group pb-3 age">
+                        <input class="form-control" id="age" placeholder="Enter Age">
+                        <p class="alert alert-danger d-none" id="agealert" role="alert">
+                            entre valid Age
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group pb-3 password">
+                        <input class="form-control" id="password" type="password" id="password" placeholder="Enter Password">
+                        <p class="alert alert-danger d-none" id="passwordalert" role="alert">
+                            entre valid password *Minimum eight characters, at least one letter and one number:*
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group pb-3 rePassword">
+                        <input class="form-control" type="password" id="rePassword" placeholder="Enter RePassword">
+                        <p class="alert alert-danger d-none" id="repasswordalert" role="alert">
+                            entre valid Repassword
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <button type="submit" disabled id="submitBtn" class="btn btn-outline-danger">Submit</button>
+        </div>
+    </div>
+    <!--end contact-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
