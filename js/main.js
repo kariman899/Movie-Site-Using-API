@@ -49,7 +49,7 @@ function displayData() {
 
   for (let i = 0; i < results.length; i++) {
     allMovie += `
-      <div class="col-md-4 mb-4 mb-5 "> <div class="movie text-center  ">
+      <div class="col-md-6 col-lg-4 ms-4 ms-md-0 mb-5 "> <div class="movie text-center  ">
       <div class="inner-img position-relative">
           <img src="${imgpath + results[i].poster_path}" class="w-100" alt="" />
           <div class="movie-overlay position-absolute  start-0">
